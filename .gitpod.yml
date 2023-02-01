@@ -2,6 +2,16 @@
 # Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)
 # and commit this file to your remote git repository to share the goodness with others.
 
+
 tasks:
-  - init: npm install
-    command: node playwright-single.js
+  - name: node module installation
+    init: npm install
+
+  - name: run 1st test case scenario
+    command: node test/Test_Scenario_1.spec.js
+  
+  - name: run 2nd test case scenario
+    command: node test/Test_Scenario_2.spec.js
+
+  - name: run 3rd test case scenario
+    command: node test/Test_Scenario_3.spec.js
